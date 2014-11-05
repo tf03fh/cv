@@ -1,0 +1,160 @@
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\raggedbottom
+\raggedright
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+        \noindent\hangindent=2em\hangafter=0 % Indentation
+        \parbox{\spacebox}{        % Box to align text
+        \textbf{#1}}               % Entry name (birth, address, etc.)
+        \hspace{12em} #2 \par}    % Entry value
+        
+\newcommand{\TrainingEntry}[2]{      % Same as \PersonalEntry
+        \noindent\hangindent=1em\hangafter=0 % Indentation
+        \parbox{\spacebox}{        % Box to align text
+        \textbf{#1}}               % Entry name (birth, address, etc.)
+        \hspace{0.5em} #2 \par}    % Entry value
+
+\begin{document}
+
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Fredrik Hansson} & \textbf{\today} \\
+830818-4137 & 0761442686 \\
+Nobelv\"agen 6A & fredrik.x.hansson@ericsson.com \\ 214 29 Malm\"o \\
+\end{tabular*}
+\\
+
+\section*{Introduction}
+Fredrik is an engineer with deep interest in software development and more than six years working experience in embedded software development, application software development and software test automation. 
+
+\section*{Education}
+\begin{itemize}
+\item \ressubheading{Lund University Faculty of Engineering, LTH}{Lund, Sweden}{Master of Science in Engineering Physics}{2003 - 2008}
+\begin{itemize}
+	\resitem{Area of specialization: Scientific computing and programming.}
+\end{itemize}
+%\item \ressubheading{Johns Hopkins University}{Baltimore, USA}{Data Science Specialization}{2014 - 2015}
+\end{itemize}
+
+\section*{Master Thesis}
+\begin{itemize}
+\item \ressubheading{Strusoft AB and LTH}{Malm\"o \& Lund, Sweden}{Implementing a Distributed Parallel Finite Element Solver}{2007 - 2008}
+\begin{itemize}
+	\resitem{Responsibilities: Optimization of commercial Finite Element Method (FEM) software.}
+    \resitem{Achievements: Delivered calculation speed improvements of up to a factor 360 and a distributed interface.}
+    \resitem{Environment:  \textit{Linux, Python, Fortran, C++, Intel MKL}.}
+\end{itemize}
+\end{itemize}
+
+\section*{Professional Experience}
+\begin{itemize}
+
+\item \ressubheading{Ericsson Radio}{Lund, Sweden}{Software Developer}{2014 - present}
+\begin{itemize}
+	\resitem{Learning...}
+	\resitem{Environment: \textit{LTE, 3GPP, C++, Rational SW Architect, Git.}}
+\end{itemize}
+
+\item \ressubheading{Ericsson Modems}{Lund, Sweden}{Software Developer}{2013 - 2014}
+\begin{itemize}
+	\resitem{Responsibilities: WCDMA cross functional development, meaning all software layers i.e. control, data and physical layers, and all test. Involved in all development and test steps, including analysis, design, coding, debugging, module test, system test, field test and maintenance.}
+	\resitem{Achievements: Delivered WCDMA layer 1 features and layer 1/2/3 error corrections, contributed to module test environment and tools and participated in task forces to secure project deliveries.}
+	\resitem{Environment: \textit{WCDMA, 3GPP, C, C++, Python, Java, Rational Rose (software modeling), Git/Gerrit, Lauterbach}.}
+\end{itemize}
+
+\item \ressubheading{ST-Ericsson}{Lund, Sweden}{Software Developer}{2011 - 2013}
+\begin{itemize}
+	\resitem{Responsibilities: WCDMA and LTE control layer development, i.e. the radio resource control (RRC) layer. Involved in all development steps, including analysis, design, coding, debugging, module test and maintenance.}
+	\resitem{Achievements: Delivered WCDMA and LTE layer 3 features and error corrections and contributed to module test environment and tools e.g. ClearCase/Git transition.}
+	\resitem{Environment: \textit{LTE, WCDMA, 3GPP, C, C++, Python, Java, Rational Rose (software modeling), Git/Gerrit, ClearCase, Lauterbach}.}
+\end{itemize}
+
+\item \ressubheading{ST-Ericsson}{Lund, Sweden}{Test Developer}{2008 - 2011}
+\begin{itemize}
+	\resitem{Responsibilities: Test system development including test scripts, test applications, test frameworks, test tools, build systems and remote test systems for OSE and Android based mobile platforms.}
+	\resitem{Achievements: Delivered and maintained test systems and participated in task forces to secure project deliveries.}
+	\resitem{Environment: \textit{Android, Linux, Java, Python, LabView, C, C++, Apache Ant, Git/Gerrit, ClearCase}.}
+\end{itemize}
+
+\item \ressubheading{Strusoft AB}{Malm\"o, Sweden}{Software Developer}{Summer 2007}
+\begin{itemize}
+	\resitem{Responsibilities: Porting of AutoCad based applications for designing building elements.}
+	\resitem{Achievements: Completed porting in time.}
+	\resitem{Environment: \textit{C++, Visual Studio, Visual SourceSafe}.}
+\end{itemize}
+
+\end{itemize}
+
+
+\section*{Skills}
+
+\SkillsEntry{Languages}{\textsc{Swedish} \hfill{\textit{Fluent}}} 
+\SkillsEntry{}{\textsc{English} \hfill{\textit{Fluent}}}
+\SkillsEntry{}{\textsc{German} \hfill{\textit{Conversation}}}
+\vspace{3mm}
+\SkillsEntry{Methodologies}{\textsc{Scrum} \hfill{\textit{Medium}}}
+\SkillsEntry{}{\textsc{Kanban} \hfill{\textit{Medium}}}
+\SkillsEntry{}{\textsc{Test Driven Development} \hfill{\textit{Advanced}}}
+\SkillsEntry{}{\textsc{Model Driven Development} \hfill{\textit{Advanced}}}
+\SkillsEntry{}{\textsc{Extreme Programming} \hfill{\textit{Advanced}}}
+\SkillsEntry{}{\textsc{Data Analysis} \hfill{\textit{Medium}}}
+\vspace{3mm}
+\SkillsEntry{Programming}{\textsc{C} \hfill{\textit{Advanced}}}
+\SkillsEntry{}{\textsc{C++} \hfill{\textit{Advanced}}}
+\SkillsEntry{}{\textsc{Java} \hfill{\textit{Advanced}}}
+\SkillsEntry{}{\textsc{Python} \hfill{\textit{Advanced}}}
+\SkillsEntry{}{\textsc{Fortran} \hfill{\textit{Medium}}}
+\SkillsEntry{}{\textsc{LabView} \hfill{\textit{Medium}}}
+\SkillsEntry{}{\textsc{Rational Rose (software modeling)} \hfill{\textit{Advanced}}}
+\SkillsEntry{}{\textsc{Rational sw Architect (software modeling)} \hfill{\textit{Medium}}}
+\SkillsEntry{}{\textsc{R (data analysis)} \hfill{\textit{Medium}}}
+\SkillsEntry{}{\textsc{PostgreSQL, SQLite, MySQL} \hfill{\textit{Medium}}}
+\SkillsEntry{}{\textsc{Bash} \hfill{\textit{Medium}}}
+\SkillsEntry{}{\textsc{Git/Github/Repo/Gerrit} \hfill{\textit{Advanced}}}
+\SkillsEntry{}{\textsc{Jenkins} \hfill{\textit{Medium}}}
+\SkillsEntry{}{\textsc{ClearCase} \hfill{\textit{Advanced}}}
+\vspace{3mm}
+\SkillsEntry{Web}{\textsc{Django} \hfill{\textit{Medium}}}
+\vspace{3mm}
+\SkillsEntry{Protocols}{\textsc{3gpp} \hfill{\textit{Advanced}}}
+\SkillsEntry{}{\textsc{Html} \hfill{\textit{Medium}}}
+\SkillsEntry{}{\textsc{TCP} \hfill{\textit{Medium}}}
+\SkillsEntry{}{\textsc{UDP} \hfill{\textit{Medium}}}
+
+\section*{Training}
+\TrainingEntry{}{R programming \hfill{\textit{4d/2014}}}
+\TrainingEntry{}{Data Scientists's Toolbox \hfill{\textit{4d/2014}}}
+\TrainingEntry{}{Agile, Scrum \& Kanban \hfill{\textit{5d/2013}}}
+\TrainingEntry{}{Production Quality Code \hfill{\textit{3d/2012}}}
+\TrainingEntry{}{C++ for C Developers \hfill{\textit{2d/2011}}}
+\TrainingEntry{}{Android for System Engineers \hfill{\textit{4d/2010}}}
+\TrainingEntry{}{Embedded Linux \hfill{\textit{3d/2010}}}
+\TrainingEntry{}{Android Intensive \hfill{\textit{3d/2009}}}
+\TrainingEntry{}{Introduction to WCDMA and LTE \hfill{\textit{1d/2009}}}
+\TrainingEntry{}{Introduction to Scrum \hfill{\textit{1d/2009}}}
+\TrainingEntry{}{Test Driven Development \hfill{\textit{2d/2009}}}
+\TrainingEntry{}{ISEB Certificate in Software Testing \hfill{\textit{3d/2008}}}
+
+\end{document}
